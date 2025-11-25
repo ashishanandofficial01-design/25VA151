@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        html,* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main {
+            width: 600px;
+            height: auto;
+            background-color: #999;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        section{
+            height: 100px;
+            background-color: #ff0;
+        }
+        header {
+            height: 50px; line-height: 50px;
+            background-color: #f00;
+        }
+        #section2 {
+            height: 100px;
+            background-color: #0f0;
+          
+        }
+        #box {
+            height: 300px;
+            /* background-color: #0f0; */
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        .boxes{
+           flex-grow: 1;
+           flex-direction: row;
+           height: 300px;
+           line-height: 300px;
+           text-align: center;
+            background-color: #f00;
+        }
+        footer {
+            height: 80px; line-height: 80px;
+            background-color: #00f;
+        }
+</style>
+</head>
+<body>
+    <main>
+        <header><h2>HEADER SECTION</h2></header>
+        <section><h2>SECTION</h2></section>
+        <div id="section2"><h3>SECTION2</h3></div>
+        <div id="box">
+            <div class="boxes">BOX 1</div>
+            <div class="boxes">BOX 2</div>
+            <div class="boxes">BOX 3</div>
+        </div>
+        <footer><h2>FOOTER SECTION</h2></footer>
+    </main>
+</body>
+</html>
