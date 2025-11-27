@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wireframe Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "nav-global nav-global nav-global"
+        "page-title page-title page-title"
+        "content1 content1 nav-local"
+        "content2 content3 sidebar"
+        "footer footer footer";
+      grid-template-columns: 2fr 2fr 1fr;
+      grid-template-rows: auto;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .grid > div {
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    #header { grid-area: header; background-color: #d32f2f; color: white; }
+    #nav-global { grid-area: nav-global; background-color: #1976d2; color: white; }
+    #page-title { grid-area: page-title; background-color: #f44336; color: white; text-align: center; }
+    #content1 { grid-area: content1; background-color: #e8f5e9; }
+    #nav-local { grid-area: nav-local; background-color: #fff176; }
+    #content2 { grid-area: content2; background-color: #c8e6c9; }
+    #content3 { grid-area: content3; background-color: #a5d6a7; }
+    #sidebar { grid-area: sidebar; background-color: #fff176; }
+    #footer { grid-area: footer; background-color: #424242; color: white; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div id="header">#Header</div>
+    <div id="nav-global">#Nav Global</div>
+    <div id="page-title">#Page Title</div>
+    <div id="content1">#Content 1</div>
+    <div id="nav-local">#Nav Local</div>
+    <div id="content2">#Content 2</div>
+    <div id="content3">#Content 3</div>
+    <div id="sidebar">#Sidebar</div>
+    <div id="footer">#Footer</div>
+  </div>
+</body>
+</html>
