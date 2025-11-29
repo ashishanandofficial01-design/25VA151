@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Menu Demo</title>
+    <style>
+        /* BLOCK element example */
+        header {
+            display: block;
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* INLINE-BLOCK for menu items */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 15px;
+            background: #f2f2f2;
+            border-radius: 5px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* FLOAT example */
+        .sidebar {
+            width: 25%;
+            background: #ddd;
+            padding: 20px;
+            float: left;
+        }
+
+        .content {
+            width: 70%;
+            background: #f9f9f9;
+            padding: 20px;
+            float: right;
+        }
+
+        /* CLEAR example */
+        .clear {
+            clear: both;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Navigation Menu Demo</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>This is an example of a floated sidebar using FLOAT.</p>
+    </div>
+
+    <div class="content">
+        <h2>Main Content</h2>
+        <p>This section is also floated, demonstrating how FLOAT works with multiple elements.</p>
+    </div>
+
+    <div class="clear"></div>
+
+    <footer>
+        Footer content goes here.
+    </footer>
+</body>
+</html>

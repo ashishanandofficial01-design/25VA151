@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    background: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* HEADER */
+.name {
+    font-size: 48px;
+    margin: 0;
+}
+
+.title {
+    color: #bfc4c7;
+    font-size: 26px;
+    margin-top: 4px;
+    margin-bottom: 25px;
+}
+
+.summary {
+    max-width: 1000px;
+}
+
+/* CONTACT BOX */
+.contact-box {
+    background: #d9d9d9;
+    padding: 20px;
+    margin: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-box p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact-box i {
+    margin-right: 10px;
+    color: #1bbccc;
+}
+
+/* TWO COLUMN SECTION */
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-col, .right-col {
+    width: 48%;
+}
+
+/* SECTION TITLES */
+.section-title {
+    font-size: 36px;
+    color: #1bbccc;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* WORK EXPERIENCE */
+.job-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.company {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.date {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.work-points {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.work-points li {
+    margin-bottom: 10px;
+}
+
+/* TECHNICAL SKILLS */
+.tech-sub {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .left-col, .right-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        text-align: left;
+    }
+}
