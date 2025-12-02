@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navigation Menu Demo </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+
+    /* BLOCK EXAMPLE */
+    header {
+      display: block;
+      background: #ffd54f;
+      padding: 15px;
+      font-size: 26px;
+      text-align: center;
+      border-radius: 6px;
+    }
+
+    /* INLINE TAGS */
+    .inline-items span {
+      display: inline;
+      background: #a5d6a7;
+      padding: 5px 8px;
+      margin: 2px;
+      border-radius: 4px;
+    }
+
+    /* INLINE-BLOCK MENU */
+    .inlineblock-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .inlineblock-menu li {
+      display: inline-block;
+      background: #4fc3f7;
+      padding: 10px 15px;
+      margin: 3px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* FLOAT MENU */
+    .float-bar div {
+      float: left;
+      background: #ff8a80;
+      padding: 10px 14px;
+      margin-right: 10px;
+      border-radius: 4px;
+    }
+    .clear {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+<header>NAVIGATION MENU </header>
+
+<h2>Inline Example</h2>
+<div class="inline-items">
+  <span>Login</span>
+  <span>Register</span>
+  <span>FAQ</span>
+  <span>Help</span>
+</div>
+
+<h2>Inline-Block Navigation</h2>
+<div class="inlineblock-menu">
+  <ul>
+    <li>Home</li>
+    <li>Explore</li>
+    <li>Courses</li>
+    <li>Contact</li>
+  </ul>
+</div>
+
+<h2>Float Example</h2>
+<div class="float-bar">
+  <div>Menu 1</div>
+  <div>Menu 2</div>
+  <div>Menu 3</div>
+  <div>Menu 4</div>
+  <div class="clear"></div>
+</div>
+
+</body>
+</html>
