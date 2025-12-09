@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Simple Responsive Navbar</title>
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        nav{
+            width: 100%;
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo{
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+                #menu-btn{
+            display: none;
+        }
+
+
+        .menu-icon{
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+       
+        @media (max-width: 768px){
+            nav ul{
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background: #444;
+                flex-direction: column;
+                padding: 15px 0;
+            }
+
+            nav ul li{
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            /* Show menu when checkbox checked */
+            #menu-btn:checked ~ ul{
+                display: flex;
+            }
+
+            .menu-icon{
+                display: block;
+            }
+        }
+    </style>
+
+<body>
+
+    <nav>
+        <div class="logo">MyWebsite</div>
+
+                <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+<h1 align="center">WELCOME TO MY RESPONSIVE NAVBAR PAGE USING HTML & CSS</h1>
+<H3 align="center">ASHISH ANAND,ASHISH ANAND,ASHISH ANAND,ASHISH ANAND,ASHISH ANAND,ASHISH ANAND,ASHISH ANAND,ASHISH ANAND,ASHISH ANAND,ASHISH ANAND</H3><br>
+<br>
+<p align="center">ABES ENGINEERING COLLEGE</P>
+
+</body>
+</head>
+</html>
